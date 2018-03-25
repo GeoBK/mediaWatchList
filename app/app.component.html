@@ -1,0 +1,21 @@
+<nav>
+    <a routerLink="/" 
+    (click)="getMediaItems('')">
+      <img src="media/04.png" class="icon" />
+    </a>
+    <a routerLink="/Movies"
+    (click)="getMediaItems('Movies')">
+      <img src="media/03.png" class="icon" />
+    </a>
+    <a routerLink="/Series"
+    (click)="getMediaItems('Series')">
+      <img src="media/02.png" class="icon" />
+    </a>
+  </nav>
+<section>
+    <header>
+        <h1>My App</h1>
+        <p class="description">Keeping track of the media I want to watch.</p>
+    </header>
+</section>
+<router-outlet></router-outlet>
